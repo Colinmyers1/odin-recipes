@@ -3,29 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Odin's Favorite Recipes</title>
   </head>
   <body>
+    <div class="background"></div>
     <div class="container">
       <h1>Odin's Favorites</h1>
-      <img
-        src="img/dish-preview.webp"
-        alt="A split image of wild boar, fish stew, and a berry tart"
-      />
-      <ul>
-        <li>
-          <a href="./recipes/wild-boar.html"
-            >Roasted Wild Board with Herbs and Root Vegetables</a
-          >
-        </li>
-        <li>
-          <a href="./recipes/fish-stew.html">Hearty Fish Stew</a>
-        </li>
-        <li>
-          <a href="./recipes/tart.html">Nut and Berry Tart</a>
-        </li>
-      </ul>
+        <div class="row">
+          <div class="card">
+            <a href="./recipes/wild-boar.html"
+              > <img src="./img/wild-boar.webp" alt="Wild boar"> Roasted Wild Boar</a
+            >
+          </div>
+          <div class="card">
+            <a href="./recipes/fish-stew.html"><img src="./img/fish-stew.webp" alt="Fish stew"> Hearty Fish Stew</a>
+          </div>
+          <div class="card">
+            
+            <a href="./recipes/tart.html"> <img src="./img/tart.webp" alt="Berry and nut tart"> Nut and Berry Tart</a>
+          </div>
+          </div>
+        </div>
     </div>
   </body>
 </html>
