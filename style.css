@@ -1,0 +1,114 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, nav, main, aside, footer {
+    padding: 20px;
+    margin: 10px 0;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+header {
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+img {
+    max-width: 100%
+}
+
+/* Grid System */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col {
+    flex: 1;
+    padding: 15px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) {
+    .col-1 { flex: 0 0 8.33%; }
+    .col-2 { flex: 0 0 16.66%; }
+    .col-3 { flex: 0 0 25%; }
+    .col-4 { flex: 0 0 33.33%; }
+    .col-5 { flex: 0 0 41.66%; }
+    .col-6 { flex: 0 0 50%; }
+    .col-7 { flex: 0 0 58.33%; }
+    .col-8 { flex: 0 0 66.66%; }
+    .col-9 { flex: 0 0 75%; }
+    .col-10 { flex: 0 0 83.33%; }
+    .col-11 { flex: 0 0 91.66%; }
+    .col-12 { flex: 0 0 100%; }
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+/* Example Sections */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content .article {
+    flex: 3;
+}
+
+.main-content .aside {
+    flex: 1;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+}
